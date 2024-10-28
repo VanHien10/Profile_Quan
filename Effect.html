@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shooting Star Effect</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #000;
+}
+
+.sky {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px white;
+    animation: shooting 2s infinite;
+}
+
+/* Tạo nhiều sao băng với vị trí và thời gian khác nhau */
+.star:nth-child(1) {
+    top: 20%;
+    left: 40%;
+    animation-delay: 0s;
+}
+
+.star:nth-child(2) {
+    top: 50%;
+    left: 60%;
+    animation-delay: 0.5s;
+}
+
+.star:nth-child(3) {
+    top: 70%;
+    left: 30%;
+    animation-delay: 1s;
+}
+
+.star:nth-child(4) {
+    top: 40%;
+    left: 80%;
+    animation-delay: 1.5s;
+}
+
+.star:nth-child(5) {
+    top: 60%;
+    left: 20%;
+    animation-delay: 2s;
+}
+
+.star:nth-child(6) {
+    top: 10%;
+    left: 50%;
+    animation-delay: 2.5s;
+}
+
+.star:nth-child(7) {
+    top: 30%;
+    left: 70%;
+    animation-delay: 3s;
+}
+
+.star:nth-child(8) {
+    top: 80%;
+    left: 40%;
+    animation-delay: 3.5s;
+}
+
+.star:nth-child(9) {
+    top: 90%;
+    left: 60%;
+    animation-delay: 4s;
+}
+
+.star:nth-child(10) {
+    top: 20%;
+    left: 10%;
+    animation-delay: 4.5s;
+}
+
+@keyframes shooting {
+    0% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(100px, 100px);
+        opacity: 0;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #000;
+}
+
+.sky {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Sao băng */
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px white;
+    animation: shooting 2s infinite;
+}
+
+.star:nth-child(1) { top: 20%; left: 40%; animation-delay: 0s; }
+.star:nth-child(2) { top: 50%; left: 60%; animation-delay: 0.5s; }
+.star:nth-child(3) { top: 70%; left: 30%; animation-delay: 1s; }
+.star:nth-child(4) { top: 40%; left: 80%; animation-delay: 1.5s; }
+.star:nth-child(5) { top: 60%; left: 20%; animation-delay: 2s; }
+.star:nth-child(6) { top: 10%; left: 50%; animation-delay: 2.5s; }
+.star:nth-child(7) { top: 30%; left: 70%; animation-delay: 3s; }
+.star:nth-child(8) { top: 80%; left: 40%; animation-delay: 3.5s; }
+.star:nth-child(9) { top: 90%; left: 60%; animation-delay: 4s; }
+.star:nth-child(10) { top: 20%; left: 10%; animation-delay: 4.5s; }
+
+@keyframes shooting {
+    0% { transform: translate(0, 0); opacity: 1; }
+    100% { transform: translate(100px, 100px); opacity: 0; }
+}
+
+/* Tuyết rơi */
+.snowflake {
+    position: absolute;
+    top: -10px;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: fall 5s linear infinite;
+}
+
+.snowflake:nth-child(11) { left: 10%; animation-delay: 0s; }
+.snowflake:nth-child(12) { left: 20%; animation-delay: 1s; }
+.snowflake:nth-child(13) { left: 30%; animation-delay: 2s; }
+.snowflake:nth-child(14) { left: 40%; animation-delay: 3s; }
+.snowflake:nth-child(15) { left: 50%; animation-delay: 4s; }
+.snowflake:nth-child(16) { left: 60%; animation-delay: 5s; }
+.snowflake:nth-child(17) { left: 70%; animation-delay: 6s; }
+.snowflake:nth-child(18) { left: 80%; animation-delay: 7s; }
+.snowflake:nth-child(19) { left: 90%; animation-delay: 8s; }
+.snowflake:nth-child(20) { left: 100%; animation-delay: 9s; }
+
+@keyframes fall {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(100vh); }
+}
+
+
+</style>
+<body>
+    <div class="sky">
+        <!-- Thêm nhiều sao băng -->
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <!-- Tuyết rơi -->
+        <div class="snowflake"></div>
+        <div class="snowflake"></div>
+        <div class="snowflake"></div>
+        <div class="snowflake"></div>
+        <div class="snowflake"></div>
+        <div class="snowflake"></div>
+        <div class="snowflake"></div>
+        <div class="snowflake"></div>
+        <div class="snowflake"></div>
+        <div class="snowflake"></div>
+    </div>
+</body>
+</html>
